@@ -1,4 +1,7 @@
 import React from 'react';
+import { useContext } from 'react';
+import { AppContext } from '../App';
+import Connect from './Connect';
 // import Meta from '../photos/metabnb.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './place.css';
@@ -28,8 +31,11 @@ import Star from '../photos/Star.png';
 import Header from './Header';
 import Footer from './Footer';
 const Place = () => {
+    const {connectwallet} = useContext(AppContext);
     return(
         <div className='body'>
+            {""}
+            {connectwallet ? <Connect /> : null}
             <Header />
             {/* Nav end*/}
 
