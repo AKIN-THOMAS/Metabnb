@@ -25,14 +25,14 @@ const Connect = () =>{
             <div className='wallets'>
                 <p className='wallet-text'>Choose your preferred wallet: </p>
                 <div className='the-wallet'>
-                    <div>
-                        <img  src={ metamask } alt='metamask'/>
-                        Metamask
-                        <img src={ next }alt=""/>
+                    <div className='the-wallet1'>
+                        <img className='imgwal' src={ metamask } alt='metamask'/>
+                        <p>Metamask</p>
+                        <img className='next' src={ next }alt=""/>
                     </div>
-                    <div>
-                        <img src={walletconnect} alt="walletconnect"/>
-                        WalletConnect
+                    <div className='the-wallet1'>
+                        <img   className='imgwal' src={walletconnect} alt="walletconnect"/>
+                        <p>WalletConnect</p>
                         <img src={ next }alt=""/>
                     </div>
                 </div>

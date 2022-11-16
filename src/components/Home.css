@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&family=Sora:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -414,11 +415,7 @@
     font-size: 48px;
     line-height: 60px;
     color: #ffffff;
-    /* width: 200px; */
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; */
-    /* background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%); */
+    
 }
 .discover{
     font-family: 'Red Rose';
@@ -507,10 +504,24 @@
 .wallet-heading{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     padding: 9px;
     gap: 386px;
+}
+.the-wallet1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.the-wallet p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
 }
 .wallet-heading p{
     font-family: 'Red Rose';
@@ -530,10 +541,11 @@
 }
 .wallets{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 32px;
-gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 32px; */
+    gap: 16px;
+    /* position: absolute; */
 }
 .wallet-text{
     font-family: 'Red Rose';
@@ -543,25 +555,26 @@ gap: 16px;
     line-height: 20px;
     color: #333333;
 }
-.the-wallet{
-    margin-top: -12px;
-}
+
 .the-wallet div:nth-child(2){
     margin-top: 12px;
 }
 .the-wallet div{
     box-sizing: border-box;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
     align-items: center;
     padding: 12px 20px;
-    gap: 135px;
+    /* gap: 135px; */
     width: 536px;
     height: 68px;
     background: #F8F9FA;
     border: 1px solid #CFD8DC;
     border-radius: 12px;
+    /* margin: 0 0 20px 20px; */
+    
+    /* flex-wrap: wrap; */
 }
 
 /* responsivness */
@@ -583,7 +596,32 @@ gap: 16px;
 .nav-toggle{
     display: none;
 }
+@media (max-width: 774px) {
+    .the-wallet div{
+        width: 100%;
+    }
+}
 @media (max-width: 1224px){
+    
+    .connect-wallet{
+        width: 50%;
+        height: 326px;
+        left: 25%;
+        top: 25%;
+    }
+    .wallet-heading{
+        gap: 200px;
+    }
+    .wallet-heading p{
+        font-size: 20px;
+    }
+    .the-wallet{
+        gap: 12px;
+    }
+    
+    .the-wallet div{
+        width: 330px;
+    }
     .links{
         top: -100%;
         display: none;
@@ -777,6 +815,24 @@ gap: 16px;
     }
 }
 @media (max-width: 680px) {
+    .the-wallet div{
+        width: 90%;
+    }
+    .connect-wallet{
+        width: 50%;
+        height: 326px;
+        left: 25%;
+        top: 25%;
+    }
+    .wallet-heading{
+        gap: 80%;
+    }
+    .wallet-heading p{
+        font-size: 20px;
+    }
+    .the-wallet{
+        gap: 12px;
+    }
     .part2{
         display: flex;
         flex-direction: row;
@@ -808,7 +864,60 @@ gap: 16px;
         font-size: 30px;
     }
 }
+@media (max-width: 375px) {
+    /* .wallets{
+        top: 80px;
+        left: -7px;
+    }
+    .the-wallet{
+        width: 50%;
+    } */
+    .the-wallet1 .imgwal{
+        width: 30px;
+    }
+    .the-wallet1{
+        width: 200px;
+    }
+    .connect-wallet{
+        width: 320px;
+    }
+}
 @media (max-width: 480px) {
+    .the-wallet1 p{
+        font-size: 20px;
+    }
+    .wallets{
+        top: 60px;
+        left: -3px;
+    }
+    .wallet-text{
+        /* font-size: 14px; */
+        text-align: center;
+    }
+    /* .the-wallet{
+        background-color: red;
+    } */
+    .the-wallet1 p{
+        font-size: 15px;
+    }
+    .the-wallet div{
+        width: 90%;
+    }
+    .connect-wallet{
+        width: 50%;
+        height: 326px;
+        left: 25%;
+        top: 25%;
+    }
+    .wallet-heading{
+        gap: 40px;
+    }
+    .wallet-heading p{
+        font-size: 20px;
+    }
+    .the-wallet{
+        gap: 12px;
+    }
     .body{
         width: 100%;
     }
