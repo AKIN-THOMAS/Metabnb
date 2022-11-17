@@ -6,10 +6,13 @@
     
 }
 body{
-    min-width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .body{
     min-height: 100vh;
@@ -761,6 +764,7 @@ body{
         gap: 0;
         display: flex;
         flex-direction: column;
+
         margin: 0;
         width: 100%;
     }
@@ -898,6 +902,15 @@ body{
     .the-wallet{
         width: 50%;
     } */
+    body{
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .main-1{
+        padding: 0;
+        margin: 0;
+    }
     .part2 img{
         width: 100px;
     }
