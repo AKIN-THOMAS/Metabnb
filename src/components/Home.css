@@ -7,7 +7,9 @@
 }
 .body{
     min-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
     background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
 }
 .nav-bar{
@@ -244,6 +246,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    width: 100%;
 }
 .inspiration-header{
     display: block;
